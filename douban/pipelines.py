@@ -17,7 +17,7 @@ class DoubanPipeline(object):
         self.file = open(file_path, 'w', encoding='utf-8')
 
     def process_item(self, item, spider):
-        self.file.write(item["json"]+"\n\r")
+        self.file.write(item["json"]+"\n")
         print(item["json"])
         return item
 
